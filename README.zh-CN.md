@@ -114,7 +114,7 @@ node dist/cli.js --config alma.config.json context my-session
 export TELEGRAM_BOT_TOKEN="..."
 
 node dist/cli.js tg-poll \
-  --allowlist 123456789,987654321 \
+  --allowlist <CHAT_ID_1>,<CHAT_ID_2> \
   --session-mode chat_topic \
   --offset-file ./tg.offset.json
 ```
@@ -133,7 +133,7 @@ node dist/cli.js tg-poll \
 
 ```bash
 node dist/cli.js alma-tail \
-  --allowlist 123456789,987654321 \
+  --allowlist <CHAT_ID_1>,<CHAT_ID_2> \
   --session-mode chat_date \
   --state-file ./alma-tail.state.json
 ```
